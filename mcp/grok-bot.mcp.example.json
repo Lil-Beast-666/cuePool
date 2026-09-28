@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "cuepool-readonly": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/cuePool/mcp/dist/index.js"
+      ],
+      "env": {
+        "CUEPOOL_API_URL": "http://127.0.0.1:7133",
+        "CUEPOOL_API_TIMEOUT_MS": "10000"
+      }
+    },
+    "cuepool-control": {
+      "command": "node",
+      "args": [
+        "/absolute/path/to/cuePool/mcp/dist/index.js"
+      ],
+      "env": {
+        "CUEPOOL_API_URL": "http://127.0.0.1:7133",
+        "CUEPOOL_API_TOKEN": "replace-with-your-cuepool-control-token",
+        "CUEPOOL_API_TIMEOUT_MS": "10000"
+      }
+    }
+  }
+}
